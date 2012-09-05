@@ -10,6 +10,7 @@ Bundle 'git://github.com/tpope/vim-commentary'
 Bundle 'git://github.com/kien/ctrlp.vim.git'
 Bundle 'git://github.com/tpope/vim-fugitive'
 Bundle 'git://github.com/scrooloose/nerdtree'
+Bundle 'git://github.com/Lokaltog/vim-powerline'
 
 Bundle 'git://github.com/tpope/vim-markdown'
 Bundle 'git://github.com/juvenn/mustache.vim.git'
@@ -31,12 +32,15 @@ set visualbell
 nmap H :tabp<CR>
 nmap L :tabn<CR>
 
-set gfn=Menlo\ Regular:h12
-
 map <leader>p :CtrlP %<CR>
 
 map <space><space> :NERDTreeToggle<CR>
 map <space>f :NERDTreeFind<CR>
+
+set t_Co=256
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
+set encoding=utf-8
 
 if filereadable('~/.vimrc.local')
   source ~/.vimrc.local
