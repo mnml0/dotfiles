@@ -42,6 +42,6 @@ let g:Powerline_symbols = 'fancy'
 set laststatus=2
 set encoding=utf-8
 
-if filereadable('~/.vimrc.local')
+if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
