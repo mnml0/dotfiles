@@ -7,6 +7,7 @@ Bundle 'git://github.com/gmarik/vundle'
 
 Bundle 'git://github.com/mileszs/ack.vim'
 Bundle 'git://github.com/tpope/vim-commentary'
+Bundle 'git://github.com/kien/ctrlp.vim.git'
 Bundle 'git://github.com/tpope/vim-fugitive'
 Bundle 'git://github.com/scrooloose/nerdtree'
 
@@ -31,6 +32,8 @@ nmap H :tabp<CR>
 nmap L :tabn<CR>
 
 set gfn=Menlo\ Regular:h12
+
+map <leader>p :CtrlP %<CR>
 
 map <space><space> :NERDTreeToggle<CR>
 map <space>f :NERDTreeFind<CR>
