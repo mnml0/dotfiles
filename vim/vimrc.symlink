@@ -28,6 +28,8 @@ set incsearch
 set hlsearch
 set backspace=indent,eol,start
 set visualbell
+set textwidth=80
+set colorcolumn=+1
 
 au BufNewFile,BufRead *.ejs set filetype=html
 
@@ -43,6 +45,8 @@ set t_Co=256
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 set encoding=utf-8
+
+hi ColorColumn ctermbg=234 guibg=#3a3a3a
 
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
