@@ -29,6 +29,8 @@ set hlsearch
 set backspace=indent,eol,start
 set visualbell
 
+au BufNewFile,BufRead *.ejs set filetype=html
+
 nmap H :tabp<CR>
 nmap L :tabn<CR>
 
