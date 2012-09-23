@@ -28,8 +28,7 @@ set incsearch
 set hlsearch
 set backspace=indent,eol,start
 set visualbell
-set textwidth=80
-set colorcolumn=+1
+set colorcolumn=81
 
 au BufNewFile,BufRead *.ejs set filetype=html
 
