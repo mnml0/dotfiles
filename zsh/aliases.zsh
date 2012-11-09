@@ -1,2 +1,3 @@
-alias concerts="e $TODO_DIR/concerts.txt"
-alias ideas="e $TODO_DIR/ideas.txt"
+export DROPBOX_DIR="$HOME/Dropbox"
+alias concerts="e $DROPBOX_DIR/txt/concerts.txt"
+alias ideas="e $DROPBOX_DIR/txt/ideas.txt"
