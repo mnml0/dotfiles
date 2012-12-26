@@ -1,1 +1,5 @@
 set gfn=Menlo\ Regular:h12
+
+if filereadable(expand("~/.gvimrc.local"))
+  source ~/.gvimrc.local
+endif
