@@ -11,6 +11,7 @@ Bundle 'git://github.com/kien/ctrlp.vim.git'
 Bundle 'git://github.com/tpope/vim-fugitive'
 Bundle 'git://github.com/scrooloose/nerdtree'
 Bundle 'git://github.com/Lokaltog/vim-powerline'
+Bundle 'git://github.com/thisivan/vim-bufexplorer'
 
 Bundle 'git://github.com/tpope/vim-markdown'
 Bundle 'git://github.com/juvenn/mustache.vim.git'
