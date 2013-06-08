@@ -70,3 +70,6 @@ for config_file ($ZSH_DOTFILES/**/completion.zsh) source $config_file
 # for HEAD^
 # https://github.com/robbyrussell/oh-my-zsh/issues/449
 unsetopt nomatch
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
