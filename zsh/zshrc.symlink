@@ -71,5 +71,8 @@ for config_file ($ZSH_DOTFILES/**/completion.zsh) source $config_file
 # https://github.com/robbyrussell/oh-my-zsh/issues/449
 unsetopt nomatch
 
+# load RVM into a shell session
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
