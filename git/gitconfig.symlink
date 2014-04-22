@@ -6,7 +6,7 @@
         protocol = https
 [user]
         name = Paul Shen
-        email = paul@mnml0.com
+        email = paulshen0@gmail.com
 [credential]
         helper = osxkeychain
 [alias]
