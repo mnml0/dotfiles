@@ -20,7 +20,7 @@ Bundle 'sandeepcr529/Buffet.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'sjl/gundo.vim'
-Bundle 'spolu/dwm.vim'
+" Bundle 'spolu/dwm.vim'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'thinca/vim-visualstar'
 Bundle 'tpope/vim-commentary'
@@ -67,9 +67,16 @@ au BufNewFile,BufRead *.ejs set filetype=html
 nmap H :tabp<CR>
 nmap L :tabn<CR>
 
-map <leader>p :CtrlP %<CR>
+let g:ctrlp_cmd = 'CtrlPMixed'
 map <leader>bb :Bufferlistsw<CR>
 map <leader>u :GundoToggle<CR>
+
+map <c-space> <Plug>(easymotion-s2)
+let g:EasyMotion_smartcase = 1
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
 
 map <space><space> :NERDTreeToggle<CR>
 map <space>f :NERDTreeFind<CR>
