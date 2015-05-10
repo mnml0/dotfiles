@@ -34,7 +34,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tyru/open-browser.vim'
 " Bundle 'Valloric/YouCompleteMe'
-Bundle 'vim-scripts/IndexedSearch'
+" Bundle 'vim-scripts/IndexedSearch'
 
 Bundle 'groenewege/vim-less'
 Bundle 'hail2u/vim-css-syntax'
@@ -75,11 +75,14 @@ map <c-space> <Plug>(easymotion-s2)
 let g:EasyMotion_smartcase = 1
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
 
 map <space><space> :NERDTreeToggle<CR>
 map <space>f :NERDTreeFind<CR>
+
+map <c-a> :Ack 
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 set t_Co=256
 let g:airline_powerline_fonts = 1
