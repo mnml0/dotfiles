@@ -68,6 +68,7 @@ nmap H :tabp<CR>
 nmap L :tabn<CR>
 
 let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_mruf_relative = 1
 map <leader>bb :Bufferlistsw<CR>
 map <leader>u :GundoToggle<CR>
 
