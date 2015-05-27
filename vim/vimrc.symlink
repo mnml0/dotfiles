@@ -66,19 +66,28 @@ au BufNewFile,BufRead *.ejs set filetype=html
 
 nmap H :tabp<CR>
 nmap L :tabn<CR>
+nmap <space>v :vsp<CR>
+nmap ;h <c-w>h
+nmap ;j <c-w>j
+nmap ;k <c-w>k
+nmap ;l <c-w>l
 
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_mruf_relative = 1
 map <leader>bb :Bufferlistsw<CR>
 map <leader>u :GundoToggle<CR>
 
-map <c-space> <Plug>(easymotion-s2)
+map <space>f <Plug>(easymotion-s2)
 let g:EasyMotion_smartcase = 1
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
+map <space>l <Plug>(easymotion-lineforward)
+map <space>j <Plug>(easymotion-j)
+map <space>k <Plug>(easymotion-k)
+map <space>h <Plug>(easymotion-linebackward)
 
 map <space><space> :NERDTreeToggle<CR>
-map <space>f :NERDTreeFind<CR>
+map <space>d :NERDTreeFind<CR>
 
 map <c-a> :Ack 
 if executable('ag')
