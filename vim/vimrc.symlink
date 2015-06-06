@@ -66,6 +66,14 @@ au BufNewFile,BufRead *.ejs set filetype=html
 
 nmap H :tabp<CR>
 nmap L :tabn<CR>
+nnoremap <c-j> J
+nmap J <c-d>
+nmap K <c-u>
+nmap <space>v :vsp<CR>
+nmap ;h <c-w>h
+nmap ;j <c-w>j
+nmap ;k <c-w>k
+nmap ;l <c-w>l
 
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_mruf_relative = 1
