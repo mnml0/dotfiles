@@ -73,13 +73,18 @@ let g:ctrlp_clear_cache_on_exit = 0
 map <leader>bb :Bufferlistsw<CR>
 map <leader>u :GundoToggle<CR>
 
-map <c-space> <Plug>(easymotion-s2)
+map <space>f <Plug>(easymotion-s2)
 let g:EasyMotion_smartcase = 1
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
+map <space>l <Plug>(easymotion-lineforward)
+map <space>j <Plug>(easymotion-j)
+map <space>k <Plug>(easymotion-k)
+map <space>h <Plug>(easymotion-linebackward)
+let g:EasyMotion_startofline = 0
 
 map <space><space> :NERDTreeToggle<CR>
-map <space>f :NERDTreeFind<CR>
+map <space>d :NERDTreeFind<CR>
 
 map <c-a> :Ack 
 if executable('ag')
