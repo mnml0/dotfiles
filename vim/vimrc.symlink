@@ -14,7 +14,7 @@ Bundle 'goldfeld/vim-seek'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'maxbrunsfeld/vim-yankstack'
-Bundle 'mileszs/ack.vim'
+" Bundle 'mileszs/ack.vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'sandeepcr529/Buffet.vim'
 Bundle 'scrooloose/nerdtree'
@@ -33,6 +33,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tyru/open-browser.vim'
+Bundle 'wincent/ferret'
 " Bundle 'Valloric/YouCompleteMe'
 " Bundle 'vim-scripts/IndexedSearch'
 
@@ -47,6 +48,7 @@ Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'fatih/vim-go'
 
 colorscheme slate
 syntax on
@@ -105,7 +107,6 @@ let g:EasyMotion_startofline = 0
 map <space><space> :NERDTreeToggle<CR>
 map <space>d :NERDTreeFind<CR>
 
-map <c-a> :Ack 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
