@@ -49,6 +49,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'fatih/vim-go'
+Bundle 'flowtype/vim-flow'
 
 colorscheme slate
 syntax on
@@ -63,6 +64,8 @@ set hlsearch
 set backspace=indent,eol,start
 set visualbell
 set colorcolumn=81
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 au BufNewFile,BufRead *.ejs set filetype=html
 
