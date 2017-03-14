@@ -1,3 +1,3 @@
-export DROPBOX_DIR="$HOME/Dropbox"
-alias concerts="e $DROPBOX_DIR/txt/concerts.txt"
-alias ideas="e $DROPBOX_DIR/txt/ideas.txt"
+alias reload!='. ~/.zshrc'
+
+alias cls='clear' # Good 'ol Clear Screen command

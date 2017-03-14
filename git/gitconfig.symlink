@@ -1,19 +1,13 @@
-# Sample gitconfig
-#
-# You probably want to change the [user] section here since you are not me.
-
+# Local/private config goes in the include
+[include]
+        path = ~/.gitconfig.local
 [hub]
         protocol = https
-[user]
-        name = Paul Shen
-        email = paulshen0@gmail.com
-[credential]
-        helper = osxkeychain
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
-        rank-contributers = !$ZSH/bin/git-rank-contributers
+        rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
 [color]
         diff = auto
@@ -32,4 +26,8 @@
 [help]
         autocorrect = 1
 [push]
-	default = simple
+        # See `git help config` (search for push.default)
+        # for more information on different options of the below setting.
+        #
+        # Setting to git 2.0 default to suppress warning message
+        default = simple
