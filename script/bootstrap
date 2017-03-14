@@ -152,5 +152,7 @@ then
   fi
 fi
 
+/usr/local/opt/fzf/install
+
 echo ''
 echo '  All installed!'
